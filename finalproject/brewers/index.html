@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article Title</title>
+
+  <!-- Custom CSS -->
+  <style>
+    /* Base font and colors */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F1F1F1; /* Light background to complement the Brewers theme */
+      color: #003B5C; /* Navy Blue for text */
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3 {
+      color: #003B5C; /* Navy Blue for headings */
+    }
+
+    p {
+      color: #444; /* Darker gray text for readability */
+    }
+
+    /* Header styles */
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #003B5C; /* Navy blue background */
+      color: #FFC72C; /* Gold text */
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.125rem;
+    }
+
+    /* Article container */
+    .article-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Magazine-style grid */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Text content column */
+    .text-column {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* Image/infographic column */
+    .image-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .image-column img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Infographic box */
+    .infographic-box {
+      background-color: #FFFFFF;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .infographic-box h2 {
+      color: #003B5C; /* Navy Blue for the infographic title */
+      margin-bottom: 10px;
+    }
+
+    .infographic-box img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Sidebar styles */
+    aside {
+      margin-top: 40px;
+    }
+
+    aside h3 {
+      font-size: 1.5rem;
+      color: #003B5C;
+    }
+
+    aside ul {
+      list-style: disc;
+      margin-left: 20px;
+      color: #003B5C;
+    }
+
+    aside a {
+      color: #FFC72C; /* Gold for links */
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Article Container -->
+  <div class="article-container">
+
+    <!-- Header -->
+    <header>
+      The Cunning and Steady Brewers
+      <p>6 playoff appearances since 2015</p>
+    </header>
+
+    <!-- Article Body (Magazine-style) -->
+    <div class="grid">
+
+      <!-- Left Column: Text Content -->
+      <div class="text-column">
+        <p>
+          Technology has rapidly transformed nearly every aspect of our lives, and education is no exception. Classrooms that once relied heavily on chalkboards and printed textbooks now integrate smartboards, online learning platforms, and interactive software. These advances have opened up new possibilities for both students and educators, making education more accessible, personalized, and engaging.
+        </p>
+
+        <p>
+          One of the most significant impacts of technology in education is the democratization of information. Students in remote or underserved areas now have access to the same resources as those in major cities, thanks to online courses and digital libraries. Platforms like Khan Academy, Coursera, and EdX provide world-class education to anyone with an internet connection.
+        </p>
+
+        <div class="infographic-box">
+            <iframe title="Brewers Playoff Teams 2015-24" aria-label="Scatter Plot" id="datawrapper-chart-KppjX" src="https://datawrapper.dwcdn.net/KppjX/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="388" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+            </script>
+        </div>
+
+        <p>
+          However, the rise of technology in education is not without its challenges. Issues such as digital literacy gaps, online distractions, and the risk of widening socioeconomic disparities must be addressed thoughtfully. Educators are tasked not only with teaching traditional subjects but also with helping students navigate the digital world responsibly.
+        </p>
+
+        <p>
+          As we move forward, a balanced approach that combines the best of traditional teaching methods with innovative technologies will be crucial. By doing so, we can ensure that education remains a powerful tool for empowerment in an increasingly connected world.
+        </p>
+      </div>
+
+      <!-- Right Column: Images and Infographics -->
+      <div class="image-column">
+        <img src="../images/brewers2022.jpg" alt="Feature Image">
+        
+        <div class="infographic-box">
+            <iframe title="Best Brewers on Playoff Teams by WAR 2015-24" aria-label="Table" id="datawrapper-chart-x1WeP" src="https://datawrapper.dwcdn.net/x1WeP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="483" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+            </script>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
