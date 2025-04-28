@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title>MLB Analysis</title>
+
+
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif; 
+    }
+
+    .background {
+      position: relative;
+      height: 100%;
+      background: url('https://live.staticflickr.com/65535/48975696912_0a9df9dde8_b.jpg') no-repeat center center/cover;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: whitesmoke;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 700px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <div class="content">
+    <h1>A Deeper Look into the Relationship Between Player Value and Salary in Major League Baseball</h1>
+    <p>By Jack Siciliano</p>
+  </div>
+
+</body>
+</html>
+
+
+
+</body>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <h1><strong>Introduction</strong></h1>
+  </head>
+<body>
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row">
+      
+      <!-- Text Section -->
+      <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+        <p class="leading-relaxed text-gray-700">
+          Fangraphs.com estimates that each point of WAR that a player accrues is worth $8 million on the open market. Now what is WAR?
+  
+          WAR stands for Wins Above Replacement and it is meant to calculate how much value a player produces by taking all aspects of the game into account. It combines defense, offense, base-running, and pitching all into one metric. 
+  
+          Here is a good breakdown from Fangraphs about the distribution:
+          - Scrub: 0–1 WAR
+          - Role Player: 1–2 WAR
+          - Solid Starter: 2–3 WAR
+          - Good Player: 3–4 WAR
+          - All-Star: 4–5 WAR
+          - Superstar: 5–6 WAR
+          - MVP: 6+ WAR
+  
+          I took the last 9 full MLB seasons and compiled the total payroll and total WAR for each playoff team. As you can see on the graph on the right, there is not a major correlation between WAR and payrolls. 
+  
+          Why is that? MLB teams control their players for the first six seasons, meaning many players never even reach free agency. So payrolls aren't always accurately reflected by WAR.
+        </p>
+      </div>
+  
+      <!-- Graph Section -->
+      <div class="md:w-1/2">
+        <iframe title="Total Payroll vs Total WAR MLB Playoff Teams 2015-24" aria-label="Scatter Plot" id="datawrapper-chart-5VmUk"
+          src="https://datawrapper.dwcdn.net/5VmUk/1/" scrolling="no" frameborder="0"
+          style="width: 100%; border: none;" height="388" data-external="1">
+        </iframe>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  <p class="max-w-2xl leading-relaxed text-black-600">
+    While there is not a huge correlation between spending big and making the playoffs, World Series Champions do tend to spend an above average amount. Here's a look at the last ten champions and how much they spent on their roster. I did not include data for 2020 because of the shortened season.
+  </p>
+  
+  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vQkfFmtaHR46k_1mgamUGVun_umFYsndEyFGPK3h1Q1j9Pa_785AxAa90M3J_O8EP_KhtPZPJ-IOIdP&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+</body>
+<section class="text-black-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-black-900"><strong>Young Stars</strong></h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-black-500">A common theme among a lot of these playoff teams is that they have young players making massive contributions early in their careers. MLB players receive the minimum salary for the first three years of their career. If a player has great season while they are being paid very little, it gives the team more flexibility to add players that give them a better chance at the World Series. I have highlighted some of the best young players who have brought their team to great heights since 2015</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-50 rounded w-full object-cover object-center mb-6" src="images/bryant.webp" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"><strong>3B Kris Bryant- 2016</strong></h3>
+            <p class="text-sm text-black-900 font-medium title-font mb-4">.292/.385/.554 39 HR 102 RBI 1st in NL MVP 7.4 WAR</p>
+            <p class="leading-relaxed text-base">In just in his second season in the big leagues, the 24-year old Bryant led his Chicago Cubs team to their first World Series in 108 years. His breakout rookie season allowed the Cubs to add some great complimentary pieces in the offseason and bolster the bullpen at the trade deadline. The financial flexibility of having an MVP on a minimum contract was instrumental to building a World Series caliber roster.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-50 rounded w-full object-cover object-center mb-6" src="images/judge.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"><strong>RF Aaron Judge- 2017</strong></h3>
+            <p class="text-sm text-black-900 font-medium title-font mb-4">.284/.422/.627 52 HR 114 RBI 2nd in AL MVP 8.1 WAR</p>
+            <p class="leading-relaxed text-base">Judge broke onto the scene in 2017 at 25 years old. He won the Home Run Derby, and led the Yankees to a wildcard spot. The Yankees had a lot of big contracts on the books, some of them much less fruitful than others, so Judge's huge rookie season on the minimum was paramount to their success.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-55 rounded w-full object-cover object-center mb-6" src="images/betts4.webp" alt="content">
+            <h3 class="tracking-widest text-red-500 text-xs font-medium title-font"><strong>RF Mookie Betts- 2018</strong> </h3>
+            <p class="text-sm text-black-900 font-medium title-font mb-4">.346/.438/.640 32 HR 80 RBI 30 SB 1st in AL MVP 10.7 WAR</p>
+            <p class="leading-relaxed text-base">Betts had one of the best seasons in baseball history as 25 year old in his fifth season. The Red Sox had been gearing up for a World Series run the past few years and Betts' breakout propelled them to that goal. They had a young core of position players, headlined by Betts, and the front office shelled out big money for DH JD Martinez. They knew they had to capitalize on the superhuman play of Mookie Betts and they did.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-50 rounded w-full object-cover object-center mb-6" src="images/witt.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font"><strong>SS Bobby Witt Jr.- 2024</strong></h3>
+            <p class="text-sm text-black-900 font-medium title-font mb-4">.332/.389/.588 39 HR 109 RBI 30 SB 2nd in NL MVP 9.4W WAR</p>
+            <p class="leading-relaxed text-base"> Witt Jr. did everything for the Kansas City Royals in 2024 at the age of 24. It is up there with some of the best seasons at the Shortstop position of all time. The Royals were not a hugely talented roster in 2024, so their success was surprising. The starting rotation had promise but they lacked depth in the bullpen and lineup. All that to say that beyond the incredible numbers, Bobby Witt Jr. carried a mediocre roster to the playoffs and even won a series.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Collage</title>
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+  
+      /* Main container for links and collage */
+      .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px; /* Center and limit width */
+      }
+  
+      /* Link container */
+      .links-container {
+        flex: 1;
+        max-width: 250px;
+        margin-right: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd; /* Border around the text */
+      }
+  
+      .links-container a {
+        display: block;
+        padding: 12px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .links-container a:hover {
+        background-color: #e1e1e1;
+      }
+  
+      /* Collage container */
+      .collage-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        flex: 3;
+      }
+  
+      .collage-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        border: 2px solid #ddd; /* Border around each image */
+      }
+  
+      .collage-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+  
+      .collage-item:hover img {
+        transform: scale(1.05);
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .collage-container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .collage-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="headline-container">
+      <h3><strong>Analytically Savvy Organizations</strong></h3>
+    </div>
+    <p class="max-w-2xl mx-auto text-center leading-relaxed text-black-600">
+      Some teams are able to consistently reach the playoffs and compete for their divisions despite playing in smaller markets with lower payrolls. Click on each team to find out more about their philosophy and how they succeed.
+    </p>
+    
+  
+    <div class="main-container">
+      
+      <!-- Links Section -->
+      <div class="links-container">
+        <a href="guardians/index.html" class="list-group-item list-group-item-action active">
+          Cleveland Guardians
+        </a>
+        <a href="rays/index.html" class="list-group-item list-group-item-action">Tampa Bay Rays</a>
+        <a href="brewers/index.html" class="list-group-item list-group-item-action">Milwaukee Brewers</a>
+      </div>
+  
+      <!-- Collage Section -->
+      <div class="collage-container">
+        <div class="collage-item">
+          <img src="images/guardians.jpg" alt="Collage Image 1">
+        </div>
+        <div class="collage-item">
+          <img src="images/rays.webp" alt="Collage Image 2">
+        </div>
+        <div class="collage-item">
+          <img src="images/brewers.webp" alt="Collage Image 3">
+        </div>
+      </div>
+    </div>
+    <div class="article-section">
+      <!-- Headline -->
+      <h1><strong>Bottom of the Ninth</strong></h1>
+  
+      <!-- Image -->
+      <img src="images/closers.jpeg" alt="Exercise Image">
+  
+      <!-- Article content -->
+      <div class="article-content">
+        <p>
+          Just like a baseball game, I'll finish this article off with the bullpen.
+        </p>
+        <p>
+          Relievers are the most volatile position group in baseball in terms of year to year performance. 
+          “These relievers, you have no idea what they're gonna do in two years. For a player like Juan Soto, you can feel pretty confident in the player he's going to be in 10 years. For the relievers, it's like I hope Kenley Jansen's good this year and I really don't wanna take a risk on having him for three years to save some money because that third year he may be awful", Soos explained.
+         
+        </p>
+        <p>
+          Having an elite bullpen is a vital part of a championship team, but it is nearly impossible to who know will step up in the playoffs. Aroldis Chapman has been one of the best closers in baseball history, but his legacy is watered down by a few massive hits in the playoffs(Jose Altuve in 2019 and Rajai Davis in 2016 are the most notable). Emmanuel Clase gave up five runs in the 2024 regular season for the Guardians. He gave up eight in eight innings in the playoffs. 
+        </p>
+        <p>
+          Knowing that, it was no surprise that reliever salaries and WAR values were all over the map. When a player is on the field for such a short amount of time, everything they do has a drastic effect on their numbers. Pitching philosophies are changing and so is bullpen strategy, but putting together an elite bullpen is still one of the most difficult parts of competing for the World Series.
+        </p>
+      </div>
+    </div>
+</html>
